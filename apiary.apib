@@ -264,7 +264,7 @@ Please be aware of the `lastID` property in the request. By default always set i
                      "metadata":null
                   }
                ],
-               "total_number_items":17
+               "last_available_id":17
             }
 
 + Response 422 (application/json)
@@ -308,8 +308,8 @@ Please be aware of the `lastID` property in the request. By default always set i
 
 ## PermissionResponseModel (object)
 + permissions (array[Permission], fixed-type)
-+ total_number_items (number, required)
-    Number of permissions that are available
++ last_available_id (number, required)
+    Highest ID that is available for getting permissions. Used for pagination.
 
 ## Permission (object)
 + id (number, required)
