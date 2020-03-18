@@ -175,7 +175,7 @@ Please be aware of the following behaviours:
 
 # Group Permissions
             
-## Permissions [/v1/permissions?lastID={lastID}&count={count}&suppressMetadata={suppressMetadata}]
+## Permissions [/v1/permissions?lastID={lastID}&count={count}&suppressMetadata={suppressMetadata}&permissionID={permissionID}]
 
 ### Get permissions (Whitelist / Blacklist) [GET]
 
@@ -194,6 +194,9 @@ Please be aware of the `lastID` property in the request. By default always set i
     + suppressMetadata (boolean, optional)
         Set whether you need the metadata or not
         + Default: `false`
+
+    + permissionID (string, optional)
+        Set a permission id you want to filter for
   
 
 + Request
